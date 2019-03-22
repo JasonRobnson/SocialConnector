@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import CommentItem from './CommentItem';
 
 class CommentFeed extends Component {
@@ -12,9 +12,9 @@ class CommentFeed extends Component {
   }
 }
 
-CommentFeed.PropTypes = {
-  comments: PropTypes.array.isRequired,
-  postId: PropTypes.string.isRequired
+CommentFeed.propTypes = {
+  comments: propTypes.array.isRequired,
+  postId: propTypes.string.isRequired
 };
 
 export default CommentFeed;
