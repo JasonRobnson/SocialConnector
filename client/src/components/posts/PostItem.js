@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
 import { deletePost, addLike, removeLike } from '../../actions/postActions';
@@ -89,11 +89,11 @@ PostItem.defaultProps = {
   showActions: true
 };
 PostItem.propTypes = {
-  deletePost: PropTypes.func.isRequired,
-  addLike: PropTypes.func.isRequired,
-  removeLike: PropTypes.func.isRequired,
-  post: PropTypes.object.isRequired,
-  auth: PropTypes.object.isRequired
+  deletePost: propTypes.func.isRequired,
+  addLike: propTypes.func.isRequired,
+  removeLike: propTypes.func.isRequired,
+  post: propTypes.object.isRequired,
+  auth: propTypes.object.isRequired
 };
 const mapStateToProps = state => ({
   auth: state.auth

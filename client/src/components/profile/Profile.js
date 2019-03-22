@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ProfileHeader from './ProfileHeader';
 import ProfileCreds from './ProfileCreds';
@@ -42,8 +42,9 @@ class Profile extends Component {
           />
 
           {/* revisit oath section to implement this feature in the future */}
-      {profile.githubusername ? (<ProfileGithub username ={profile.githubusername}/> ): null}
-          
+          {profile.githubusername ? (
+            <ProfileGithub username={profile.githubusername} />
+          ) : null}
         </div>
       );
     }
@@ -59,9 +60,9 @@ class Profile extends Component {
   }
 }
 
-PropTypes.propTypes = {
-  getProfileByHandle: PropTypes.func.isRequired,
-  profile: PropTypes.object.isRequired
+Profile.propTypes = {
+  getProfileByHandle: propTypes.func.isRequired,
+  profile: propTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({

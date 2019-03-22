@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PostForm from './PostForm';
 import PostFeed from './PostFeed';
@@ -31,8 +31,8 @@ class Posts extends Component {
   }
 }
 Posts.propTypes = {
-  getPosts: PropTypes.func.isRequired,
-  post: PropTypes.object.isRequired
+  getPosts: propTypes.func.isRequired,
+  post: propTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({

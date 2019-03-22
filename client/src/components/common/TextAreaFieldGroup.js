@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 const TextAreaFieldGroup = ({
   name,
@@ -32,12 +32,12 @@ const TextAreaFieldGroup = ({
 };
 
 TextAreaFieldGroup.propTypes = {
-  name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  value: PropTypes.string,
-  info: PropTypes.string,
-  error: PropTypes.string,
-  onChange: PropTypes.func.isRequired
+  name: propTypes.string.isRequired,
+  placeholder: propTypes.string.isRequired,
+  value: propTypes.string,
+  info: propTypes.string,
+  error: propTypes.string,
+  onChange: propTypes.func.isRequired
 };
 
 export default TextAreaFieldGroup;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
+import { propTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import { getCurrentProfile, deleteAccount } from '../../actions/profileActions';
 import { Link } from 'react-router-dom';
@@ -72,11 +72,11 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.PropTypes = {
-  getCurrentProfile: PropTypes.func.isRequired,
-  deleteAccount: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-  profile: PropTypes.object.isRequired
+Dashboard.propTypes = {
+  getCurrentProfile: propTypes.func.isRequired,
+  deleteAccount: propTypes.func.isRequired,
+  auth: propTypes.object.isRequired,
+  profile: propTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
