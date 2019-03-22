@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import isEmpty from '../../validation/is-empty';
 
@@ -46,8 +46,8 @@ class ProfileItem extends Component {
   }
 }
 
-ProfileItem.Proptypes = {
-  profile: PropTypes.object.isRequired
+ProfileItem.propTypes = {
+  profile: propTypes.object.isRequired
 };
 
 export default ProfileItem;
